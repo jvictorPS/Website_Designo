@@ -14,7 +14,7 @@ import {
 
 export default function Header() {
 
-  const [menuIsVisible, setMenuIsVisible] = useState(true);
+  const [menuIsVisible, setMenuIsVisible] = useState(false);
 
   function menuMobile() {
     setMenuIsVisible(!menuIsVisible)

@@ -24,8 +24,6 @@ export const ContainerMenuMobile = styled.section`
     pointer-events: none;
     transform: translateY(50px);
 
-    transition: .5s;
-
     nav {
     display: flex;
     align-items: center;
@@ -33,7 +31,6 @@ export const ContainerMenuMobile = styled.section`
     flex-direction: column;
     gap: 2rem;
     transform: scale(0.7);
-    transition: .7s;
     
 }
 
