@@ -1,12 +1,29 @@
 import  logo from '../../../assets/logo-dark.png'
-import { ContaineCabecalho, ContainerLinks, LinkEstilizado, Logo } from './style'
+import MenuMobile from '../../atoms/MenuMobile'
+import { useState } from "react";
+import { CgMenu } from 'react-icons/cg'
+
+import { 
+  ContainerCabecalho, 
+  ContainerLinks, 
+  LinkEstilizado, 
+  Logo,
+  ContainerIconeMenu
+} from './style'
 
 
 export default function Header() {
 
+  const [menuIsVisible, setMenuIsVisible] = useState(true);
+
+  function menuMobile() {
+    setMenuIsVisible(!menuIsVisible)
+    console.log('clicou')
+  }
+
     return (
-        <ContaineCabecalho>
-            <LinkEstilizado to='/'><Logo src={logo} alt="Logo do site" /></LinkEstilizado>
+        <ContainerCabecalho>
+            <LinkEstilizado onClick={() => setMenuIsVisible(false)} to='/'><Logo src={logo} alt="Logo do site" /></LinkEstilizado>
 
             <ContainerLinks>
               <LinkEstilizado to='/About'>OUR COMPANY</LinkEstilizado>
@@ -14,7 +31,19 @@ export default function Header() {
               <LinkEstilizado to='/Contact'>CONTACT</LinkEstilizado>
             </ContainerLinks>
 
-        </ContaineCabecalho>
+            <ContainerIconeMenu>
+              <div onClick={menuMobile}><CgMenu size={30} /></div>
+            </ContainerIconeMenu>
+
+            {/* {menuIsVisible ? (
+              
+              ): null} */}
+
+              <MenuMobile 
+                menuIsVisible={menuIsVisible}
+                setMenuIsVisible={setMenuIsVisible}
+              />
+        </ContainerCabecalho>
 
     )
 }
