@@ -51,6 +51,7 @@ export const BlockForMenu = styled.div`
     backdrop-filter: blur(10px);
 
     background: rgb(29,28,30);
+    z-index: 5;
 
     top: 96px;
     right: 0;
