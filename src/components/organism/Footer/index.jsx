@@ -15,18 +15,25 @@ import {
     Title,
     ContainsSocialMedia,
     Line,
-    ContainerContact
+    ContainerContactInvitation
 } from "./style";
+
+
+import Button from "../../atoms/Button"
 
 export default function Footer() {
     return (
 
         <ContainerFooter>
 
-            <ContainerContact>
+            <ContainerContactInvitation>
                 <h4>Let’s talk about your project</h4>
                 <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
-            </ContainerContact>
+                <Button
+                    text={'Get in touch'}
+                    theme={'dark'}
+                />
+            </ContainerContactInvitation>
 
             <Logo src={LogoDark} alt="Logo do site"></Logo>
 

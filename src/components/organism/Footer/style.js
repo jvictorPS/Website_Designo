@@ -15,7 +15,7 @@ export const ContainerFooter = styled.footer`
     position: relative;
 `
 
-export const ContainerContact = styled.section`
+export const ContainerContactInvitation = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,15 +36,17 @@ export const ContainerContact = styled.section`
     h4 {
         font-size: 32px;
         font-weight: 500;
-        text-align: center
-
+        text-align: center;
+        line-height: 36px;
     }
 
     p {
         text-align: center;
         margin-top: 15px;
+        margin-bottom: 32px;
         font-size: 15px;
         font-weight: 400;
+        line-height: 25px;
     }
 `
 
