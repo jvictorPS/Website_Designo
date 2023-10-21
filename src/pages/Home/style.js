@@ -14,6 +14,7 @@ export const ContainerCardsService = styled.section`
     align-items: center;
     flex-direction: column;
     gap: 24px;
+    padding: 0 24px;
 `
 
 export const SummaryAboutSection = styled.section`

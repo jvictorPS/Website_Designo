@@ -7,6 +7,7 @@ export const ContainerAdvantagesSection = styled.section`
     flex-direction: column;
     align-items: center;
     gap: 80px;
+    padding: 0 24px;
 `
 
 export const CardAdvantage = styled.div`

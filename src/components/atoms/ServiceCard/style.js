@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const ContainerCard = styled.div`
-    width: 327px;
+    width: 100%;
     height: 250px;
     border-radius: 15px;
     background: #000;
@@ -43,7 +43,7 @@ export const ContainerCard = styled.div`
     }
 
     div {
-        width: 327px;
+        width: 100%;
         height: 250px;
         position: absolute;
         top: 0;
