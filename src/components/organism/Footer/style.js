@@ -13,6 +13,7 @@ export const ContainerFooter = styled.footer`
     justify-content: flex-end;
     padding: 64px 24px;
     position: relative;
+    margin-top: 310px;
 `
 
 export const ContainerContactInvitation = styled.section`
