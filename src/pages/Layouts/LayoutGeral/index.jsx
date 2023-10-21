@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
-import Header from "../../../components/molecules/Header";
+import Header from "../../../components/organism/Header";
+import Footer from "../../../components/organism/Footer";
 
 
 export default function LayoutGeral() {
@@ -9,7 +10,7 @@ export default function LayoutGeral() {
         <>
         <Header />
             <Outlet />
-        <footer> Rodapé </footer>
+        <Footer />
         
         </>
     )
