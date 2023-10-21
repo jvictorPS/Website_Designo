@@ -12,6 +12,7 @@ import {
   ContainerIconeMenu
 } from './style'
 import { TamparFundo } from '../../atoms/MenuMobile/style';
+import { Link } from 'react-router-dom';
 
 
 export default function Header() {
@@ -24,7 +25,7 @@ export default function Header() {
 
     return (
         <ContainerCabecalho>
-            <LinkEstilizado onClick={() => setMenuIsVisible(false)} to='/'><Logo src={logo} alt="Logo do site" /></LinkEstilizado>
+            <Link onClick={() => setMenuIsVisible(false)} to='/'><Logo src={logo} alt="Logo do site" /></Link>
 
             <ContainerLinks>
               <LinkEstilizado to='/About'>OUR COMPANY</LinkEstilizado>
