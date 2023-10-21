@@ -14,7 +14,7 @@ export default function Home() {
         <br />
         <h1>Home do site</h1>
         <br />
-        <h1>Home do site</h1>
+        <h1>Hosssme do site</h1>
         <br />
         <h1>Home do site</h1>
         <br />

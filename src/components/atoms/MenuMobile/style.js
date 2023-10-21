@@ -1,10 +1,9 @@
-import styled, {css} from "styled-components";
-import { Link } from "react-router-dom";
+import styled, {css} from "styled-components"
+import { Link } from "react-router-dom"
 
 
 export const ContainerMenuMobile = styled.section`
     position: absolute;
-    backdrop-filter: blur(3px);
     width: 100%;
     height: 235px;
     top: 0;
@@ -34,17 +33,28 @@ export const ContainerMenuMobile = styled.section`
     
 }
 
-
 ${({ isVisible }) => isVisible && css`
 opacity: 1;
 pointer-events: auto;
 transform: translateY(96px);
 
-nav {
-    transform: scale(1);
+    nav {
+        transform: scale(1);
+    }`
 }
-`}
+`
 
+export const TamparFundo = styled.div`
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+
+    background: rgb(29,28,30);
+
+    top: 96px;
+    right: 0;
+    opacity: 0.5
 `
 
 export const LinkEstilizado = styled(Link)`

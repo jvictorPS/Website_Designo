@@ -2,6 +2,7 @@ import  logo from '../../../assets/logo-dark.png'
 import MenuMobile from '../../atoms/MenuMobile'
 import { useState } from "react";
 import { CgMenu } from 'react-icons/cg'
+import { IoCloseSharp } from 'react-icons/io5'
 
 import { 
   ContainerCabecalho, 
@@ -10,15 +11,15 @@ import {
   Logo,
   ContainerIconeMenu
 } from './style'
+import { TamparFundo } from '../../atoms/MenuMobile/style';
 
 
 export default function Header() {
 
-  const [menuIsVisible, setMenuIsVisible] = useState(false);
+  const [menuIsVisible, setMenuIsVisible] = useState(false)
 
   function menuMobile() {
     setMenuIsVisible(!menuIsVisible)
-    console.log('clicou')
   }
 
     return (
@@ -32,12 +33,16 @@ export default function Header() {
             </ContainerLinks>
 
             <ContainerIconeMenu>
-              <div onClick={menuMobile}><CgMenu size={30} /></div>
+              {!menuIsVisible ?
+                <div onClick={menuMobile}><CgMenu size={30} /></div>
+              :
+                <div onClick={menuMobile}><IoCloseSharp size={30} /></div>
+              }
             </ContainerIconeMenu>
 
-            {/* {menuIsVisible ? (
-              
-              ): null} */}
+            {menuIsVisible ? (
+                <TamparFundo />
+              ): null}
 
               <MenuMobile 
                 menuIsVisible={menuIsVisible}
