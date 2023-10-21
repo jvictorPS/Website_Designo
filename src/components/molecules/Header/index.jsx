@@ -5,13 +5,13 @@ import { CgMenu } from 'react-icons/cg'
 import { IoCloseSharp } from 'react-icons/io5'
 
 import { 
-  ContainerCabecalho, 
+  ContainerHeader, 
   ContainerLinks, 
-  LinkEstilizado, 
+  StyledLink, 
   Logo,
-  ContainerIconeMenu
+  ContainerMenuIcon
 } from './style'
-import { TamparFundo } from '../../atoms/MenuMobile/style';
+import { BlockForMenu } from '../../atoms/MenuMobile/style';
 import { Link } from 'react-router-dom';
 
 
@@ -24,32 +24,32 @@ export default function Header() {
   }
 
     return (
-        <ContainerCabecalho>
+        <ContainerHeader>
             <Link onClick={() => setMenuIsVisible(false)} to='/'><Logo src={logo} alt="Logo do site" /></Link>
 
             <ContainerLinks>
-              <LinkEstilizado to='/About'>OUR COMPANY</LinkEstilizado>
-              <LinkEstilizado to='/Locations'>LOCATIONS</LinkEstilizado>
-              <LinkEstilizado to='/Contact'>CONTACT</LinkEstilizado>
+              <StyledLink to='/About'>OUR COMPANY</StyledLink>
+              <StyledLink to='/Locations'>LOCATIONS</StyledLink>
+              <StyledLink to='/Contact'>CONTACT</StyledLink>
             </ContainerLinks>
 
-            <ContainerIconeMenu>
+            <ContainerMenuIcon>
               {!menuIsVisible ?
                 <div onClick={menuMobile}><CgMenu size={30} /></div>
               :
                 <div onClick={menuMobile}><IoCloseSharp size={30} /></div>
               }
-            </ContainerIconeMenu>
+            </ContainerMenuIcon>
 
             {menuIsVisible ? (
-                <TamparFundo />
+                <BlockForMenu />
               ): null}
 
               <MenuMobile 
                 menuIsVisible={menuIsVisible}
                 setMenuIsVisible={setMenuIsVisible}
               />
-        </ContainerCabecalho>
+        </ContainerHeader>
 
     )
 }

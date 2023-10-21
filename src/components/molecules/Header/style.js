@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const ContainerCabecalho = styled.header`
+export const ContainerHeader = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -15,7 +15,7 @@ export const Logo = styled.img`
     height: 27px;
 `
 
-export const LinkEstilizado = styled(Link)`
+export const StyledLink = styled(Link)`
     font-size: 14px;
     font-weight: 400;
     color: #333136;
@@ -36,9 +36,9 @@ export const ContainerLinks = styled.nav`
     }
 `
 
-export const ContainerIconeMenu = styled.section`
+export const ContainerMenuIcon = styled.section`
     display: none;
-    
+
     @media (max-width: 620px) { 
         display: initial;
     }

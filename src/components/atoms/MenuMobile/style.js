@@ -44,7 +44,7 @@ transform: translateY(96px);
 }
 `
 
-export const TamparFundo = styled.div`
+export const BlockForMenu = styled.div`
     position: absolute;
     width: 100%;
     height: 100%;
@@ -57,7 +57,7 @@ export const TamparFundo = styled.div`
     opacity: 0.5
 `
 
-export const LinkEstilizado = styled(Link)`
+export const StyledLink = styled(Link)`
     font-size: 24px;
     font-weight: 400;
     color: #FFF;

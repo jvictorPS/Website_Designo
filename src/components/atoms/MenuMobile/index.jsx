@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */ // TODO: upgrade to latest eslint tooling
 
-import { LinkEstilizado } from './style'
+import { StyledLink } from './style'
 import { useEffect, useRef } from 'react'
 
 
@@ -34,9 +34,9 @@ export default function MenuMobile({ menuIsVisible , setMenuIsVisible }) {
     return (
         <ContainerMenuMobile isVisible={menuIsVisible} ref={menuRef}>
             <nav>
-                <LinkEstilizado onClick={() => setMenuIsVisible(false)} to='/About'>OUR COMPANY</LinkEstilizado>
-                <LinkEstilizado onClick={() => setMenuIsVisible(false)} to='/Locations'>LOCATIONS</LinkEstilizado>
-                <LinkEstilizado onClick={() => setMenuIsVisible(false)} to='/Contact'>CONTACT</LinkEstilizado>
+                <StyledLink onClick={() => setMenuIsVisible(false)} to='/About'>OUR COMPANY</StyledLink>
+                <StyledLink onClick={() => setMenuIsVisible(false)} to='/Locations'>LOCATIONS</StyledLink>
+                <StyledLink onClick={() => setMenuIsVisible(false)} to='/Contact'>CONTACT</StyledLink>
             </nav>
         </ContainerMenuMobile>
     )
