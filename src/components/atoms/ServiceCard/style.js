@@ -53,7 +53,7 @@ export const ContainerCard = styled.div`
         opacity: 0.6;
         cursor: pointer;
 
-        &:hover {
+        &:active {
             background-color: #E7816B;
         }
     }
