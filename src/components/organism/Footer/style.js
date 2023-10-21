@@ -20,7 +20,7 @@ export const ContainerContact = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 300px;
+    width: 90%;
     height: 379px;
     background: #E7816B;
     border-radius: 15px;
@@ -28,13 +28,10 @@ export const ContainerContact = styled.section`
     top: -190px;
     background-image: url(${BackgroundMobile});
     background-size: 270%;
-    background-position: -410px -50px;
+    background-position: 80% -5%;
     background-repeat: no-repeat;
-
     color: #FFF;
     padding: 0 24px;
-
-
 
     h4 {
         font-size: 32px;
