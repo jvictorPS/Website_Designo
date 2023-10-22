@@ -20,8 +20,11 @@ import {
 
 
 import Button from "../../atoms/Button"
+import ScrollToTop from "../../../utils/ScrollToTop"
+import { Link } from "react-router-dom"
 
 export default function Footer() {
+
     return (
 
         <ContainerFooter>
@@ -29,10 +32,13 @@ export default function Footer() {
             <ContainerContactInvitation>
                 <h4>Let’s talk about your project</h4>
                 <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
-                <Button
-                    text={'Get in touch'}
-                    theme={'dark'}
-                />
+                <Link onClick={ScrollToTop} to='/Contact'>
+                    <Button
+                        text={'Get in touch'}
+                        theme={'dark'}
+                    />
+                
+                </Link>
             </ContainerContactInvitation>
 
             <Logo src={LogoDark} alt="Logo do site"></Logo>
@@ -41,9 +47,9 @@ export default function Footer() {
 
             <ContainerContactInformation>
                 <ContainerLinks>
-                    <StyledLink to='/About'>OUR COMPANY</StyledLink>
-                    <StyledLink to='/Locations'>LOCATIONS</StyledLink>
-                    <StyledLink to='/Contact'>CONTACT</StyledLink>
+                    <StyledLink onClick={ScrollToTop} to='/About'>OUR COMPANY</StyledLink>
+                    <StyledLink onClick={ScrollToTop} to='/Locations'>LOCATIONS</StyledLink>
+                    <StyledLink onClick={ScrollToTop} to='/Contact'>CONTACT</StyledLink>
                 </ContainerLinks>
 
                 <ContainsLocation>

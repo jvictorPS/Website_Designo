@@ -3,21 +3,22 @@ import arrow from '../../../assets/shared/desktop/icon-right-arrow.svg'
 
 
 import {
-    ContainerCard,
+    StyledLink
 } from './style'
+import ScrollToTop from '../../../utils/ScrollToTop'
 
-export default function ServiceCard({title, image}) {
+export default function ServiceCard({to, title, image}) {
 
     return (
-        <ContainerCard
-            image={image}
-        >
-            <div></div>
-            <h4>{title}</h4>
-            <section>
-                <p>View projects</p>
-                <img src={arrow} alt='seta para a direita'></img>
-            </section>
-        </ContainerCard>
+
+        <StyledLink image={image} onClick={ScrollToTop} to={to}>
+                <div></div>
+                <h4>{title}</h4>
+                <section>
+                    <p>View projects</p>
+                    <img src={arrow} alt='seta para a direita'></img>
+                </section>
+            </StyledLink>
+
     )
 }

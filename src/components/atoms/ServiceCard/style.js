@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import {Link} from 'react-router-dom'
 
-
-export const ContainerCard = styled.div`
+export const StyledLink = styled(Link)`
+    text-decoration: none;
     width: 100%;
     height: 250px;
     border-radius: 15px;
@@ -38,13 +39,13 @@ export const ContainerCard = styled.div`
         align-items: center;
         justify-content: space-between;
         gap: 16px;
-        z-index: 4;
+        z-index: 6;
         cursor: pointer;
     }
 
     div {
         width: 100%;
-        height: 250px;
+        height: 100%;
         position: absolute;
         top: 0;
         left: 0;
@@ -53,7 +54,7 @@ export const ContainerCard = styled.div`
         opacity: 0.6;
         cursor: pointer;
 
-        &:active {
+        &:hover {
             background-color: #E7816B;
         }
     }

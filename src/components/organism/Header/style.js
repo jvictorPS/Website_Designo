@@ -8,6 +8,7 @@ export const ContainerHeader = styled.header`
     height: 96px;
     width: 100%;
     padding: 0 24px;
+    background-color: #fff;
 `
 
 export const Logo = styled.img`
