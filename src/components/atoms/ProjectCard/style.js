@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const ContainerCard = styled.div`
-    width: 327px;
+    width: 100%;
     height: 478px;
     border-radius: 15px;
     display: flex;
@@ -11,17 +11,17 @@ export const ContainerCard = styled.div`
     margin: 10px;
 `
 export const ContainerImage = styled.img`
-    width: 327px;
-    height: 320px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border: none;
+    width: 100%;
+    height: 320px;
     object-fit: cover;
 `
 
 export const ContainerDescription = styled.div`
     background-color: #FDF3F0;
-    width: 327px;
+    width: 100%;
     height: 158px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
