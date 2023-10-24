@@ -1,7 +1,14 @@
+import Header from '../../components/organism/Header'
+import Footer from '../../components/organism/Footer'
+import CountrieSection from '../../components/molecules/CountriesSection'
+
+
 export default function Contact() {
     return (
         <>
-            <h1>Área de contato</h1>
+            <Header />
+                <CountrieSection />
+            <Footer />
         </>
     )
 }
