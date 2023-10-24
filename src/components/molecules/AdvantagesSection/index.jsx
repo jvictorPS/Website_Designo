@@ -4,19 +4,18 @@ import friendly from '../../../assets/home/desktop/illustration-friendly.svg';
 
 import { 
     CardAdvantage, 
-    Circle, 
     ContainerAdvantagesSection, 
-    Image, 
     Text } from "./style";
+import CircularImage from '../../atoms/CircularImage';
 
 export default function AdvantagesSection() {
     return (
         <ContainerAdvantagesSection>
             <CardAdvantage>
                 
-                <Circle>
-                    <Image src={passionate} />
-                </Circle>
+                <CircularImage 
+                    image={passionate}
+                />
 
                 <Text>
                     <h4>PASSIONATE</h4>
@@ -28,9 +27,9 @@ export default function AdvantagesSection() {
 
             <CardAdvantage>
                 
-                <Circle>
-                    <Image src={resourceful} />
-                </Circle>
+                <CircularImage 
+                    image={resourceful}
+                />
 
                 <Text>
                     <h4>RESOURCEFUL</h4>
@@ -41,9 +40,9 @@ export default function AdvantagesSection() {
 
             <CardAdvantage>
                 
-                <Circle>
-                    <Image src={friendly} />
-                </Circle>
+                <CircularImage 
+                    image={friendly}
+                />
 
                 <Text>
                     <h4>FRIENDLY</h4>

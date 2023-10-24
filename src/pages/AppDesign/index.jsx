@@ -8,7 +8,6 @@ import ServicesCardsOrganizer from "../../components/atoms/ServicesCardsOrganize
 import PageOrganizer from "../../components/atoms/PageOrganizer";
 
 
-
 export default function AppDesign() {
     return (
         <PageOrganizer>

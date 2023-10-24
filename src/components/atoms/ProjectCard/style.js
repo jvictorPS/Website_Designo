@@ -8,7 +8,6 @@ export const ContainerCard = styled.div`
     display: flex;
     flex-direction: column;
     background-color: transparent;
-    margin: 10px;
 `
 export const ContainerImage = styled.img`
     border-top-left-radius: 15px;

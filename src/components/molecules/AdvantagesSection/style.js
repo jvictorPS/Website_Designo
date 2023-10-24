@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-import circulo from "../../../assets/contact/desktop/bg-pattern-hero-desktop.svg"
 
 export const ContainerAdvantagesSection = styled.section`
     display: flex;
@@ -34,16 +33,4 @@ export const Text = styled.div`
         font-size: 16px;
         font-weight: 400;
     }
-`
-
-export const Image = styled.img`
-    width: 188px;
-`
-
-export const Circle = styled.div`
-    width: 202px;
-    height: 202px;
-    background-image: url(${circulo});
-    background-size: cover;
-    background-position: center;
 `

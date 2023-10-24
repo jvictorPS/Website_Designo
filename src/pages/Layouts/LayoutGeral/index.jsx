@@ -4,14 +4,11 @@ import Footer from "../../../components/organism/Footer";
 
 
 export default function LayoutGeral() {
-    
     return (
-
         <>
-        <Header />
-            <Outlet />
-        <Footer />
-        
+            <Header />
+                <Outlet />
+            <Footer />   
         </>
     )
 }
