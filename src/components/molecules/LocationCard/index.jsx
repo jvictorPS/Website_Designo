@@ -17,11 +17,11 @@ export default function LocationCard({
 }) {
     return (
         <Containercards>
-            <MapCard 
+            {/* <MapCard 
                 latitude={latitude}
                 longitude={longitude}
                 office={officeName}
-            />
+            /> */}
 
             <OfficeInformationCard 
                 countrie={countrie}
