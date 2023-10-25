@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 
-export const ContainerCards = styled.section`
+export const Containercards = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 40px;
 `
