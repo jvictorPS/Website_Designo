@@ -1,35 +1,15 @@
+import MapCard from "../../components/atoms/MapCard";
+
 export default function Locations() {
+
     return (
         <>
-        
-        <h1>Locations do site</h1>
-        <br />
-        <h1>Locations do site</h1>
-        <br />
-        <h1>Locations do site</h1>
-        <br />
-        <h1>Locations do site</h1>
-        <br />
-        <h1>Locations do site</h1>
-        <br />
-        <h1>Locations do site</h1>
-        <br />
-        <h1>Hosssme do site</h1>
-        <br />
-        <h1>Locations do site</h1>
-        <br />
-        <h1>Locations do site</h1>
-        <br />
-        <h1>Locations do site</h1>
-        <br />
-        <h1>Locations do site</h1>
-        <br />
-        <h1>Locations do site</h1>
-        <br />
-        <h1>Locations do site</h1>
-        <br />
-        <h1>Locations do site</h1>
-        <br />
+            <MapCard 
+                latitude={43.64375922818151}
+                longitude={-79.39446698836224}
+                office={'Designo Central Office'}
+                adress={'3886 Wellington Street Toronto, Ontario M9C 3J5'}
+            />
         </>
     )
 }
