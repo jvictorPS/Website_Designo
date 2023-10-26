@@ -3,8 +3,8 @@
 import { StyledButton } from "./style";
 
 
-export default function Button({text , theme}) {
+export default function Button({text , theme, type}) {
     return (
-            <StyledButton theme={theme}>{text}</StyledButton>
+            <StyledButton type={type} theme={theme}>{text}</StyledButton>
     )
 }
