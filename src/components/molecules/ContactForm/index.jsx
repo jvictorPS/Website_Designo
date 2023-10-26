@@ -50,8 +50,8 @@ export default function ContactForm() {
                     <StyledInput 
                         placeholder="Name"
                         {...register("name")}
+                        autocomplete="off"
                     />
-
                     <ErrorMessage>
                         {errors?.name?.message}
                     </ErrorMessage>
@@ -62,7 +62,6 @@ export default function ContactForm() {
                         placeholder="Email Address"
                         {...register("email")}
                     />
-
                     <ErrorMessage>{errors?.email?.message}</ErrorMessage>
                 </ContainerInput>
 
@@ -78,7 +77,6 @@ export default function ContactForm() {
                         placeholder="Your Message"
                         {...register("message")}
                     />
-
                     <ErrorMessage>{errors?.message?.message}</ErrorMessage>
                 </ContainerInput>
 
@@ -88,7 +86,7 @@ export default function ContactForm() {
                     type={'submit'}
                 />
             </StyledForm>
-            
+
         </ContainerForm>
     )
 }

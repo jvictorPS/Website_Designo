@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import oval from '../../../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg'
 
 
 export const ContainerForm = styled.div`
@@ -11,6 +12,9 @@ export const ContainerForm = styled.div`
     justify-content: center;
     padding: 72px 24px;
     gap: 48px;
+    background-image: url(${oval});
+    background-position: 15% top ;
+    background-repeat: no-repeat;
 `
 
 export const ContainerTitle = styled.div`
@@ -19,7 +23,7 @@ export const ContainerTitle = styled.div`
     color: #fff;
     height: 320px;
     width: 100%;
-    background-color: #E7816B;
+    background-color: transparent;
     text-align: center;
     align-items: center;
     justify-content: center;
