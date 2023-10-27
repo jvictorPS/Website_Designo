@@ -99,6 +99,5 @@ export const ContainerDescription = styled.div`
         border-top-right-radius: 15px;
         border-bottom-left-radius: 0;
         padding: 154px 95px;
-
     }
 `

@@ -3,7 +3,13 @@
 import { ContainerCard, ContainerDescription, ContainerImage } from "./style";
 
 
-export default function AboutQualitiesCard({image , title , p1 , p2}) {
+export default function AboutQualitiesCard({
+    image, 
+    title, 
+    p1, 
+    p2,
+}) {
+        
     return (
         <ContainerCard>
             <ContainerImage
