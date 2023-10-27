@@ -123,7 +123,7 @@ export const GridContainer = styled.div`
 `
 
 export const MergedRow = styled.div`
-    @media (min-width: 1440px) {
+    @media (min-width: ${sizes.desktop}) {
     grid-row: span 2;
     }
 `

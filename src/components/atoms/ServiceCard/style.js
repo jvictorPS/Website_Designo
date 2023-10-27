@@ -55,6 +55,10 @@ export const StyledLink = styled(Link)`
         border-radius: 15px;
         opacity: 0.6;
         cursor: pointer;
+
+        &:hover {
+            background-color: red;
+        }
     }
 
     @media (min-width: ${sizes.tablet}) {
