@@ -12,4 +12,9 @@ export const ContainerCards = styled.section`
         align-items: center;
         margin: 0 40px;
     }
+
+    @media (min-width: ${sizes.desktop}) {
+        gap: 40px;
+        padding-bottom: 400px;
+    }
 `

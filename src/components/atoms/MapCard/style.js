@@ -13,4 +13,9 @@ export const MapContainerStyled = styled(MapContainer)`
         width: 100%;
         border-radius: 15px;
     }
+
+    @media (min-width: ${sizes.desktop}) {
+        width: 350px;
+        height: 326px;
+    }
 `

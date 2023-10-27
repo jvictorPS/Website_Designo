@@ -48,6 +48,11 @@ export const Containercard = styled.div`
             font-size: 16px;
         }
     }
+
+    @media (min-width: ${sizes.desktop}) {
+        width: 730px;
+        height: 326px;
+    }
 `
 
 export const Container = styled.div`

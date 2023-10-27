@@ -13,10 +13,13 @@ export default function LocationCard({
     adress,
     city,
     phone,
-    email
+    email,
+    position
 }) {
     return (
-        <Containercards>
+        <Containercards
+            position={position}
+        >
             <MapCard 
                 latitude={latitude}
                 longitude={longitude}

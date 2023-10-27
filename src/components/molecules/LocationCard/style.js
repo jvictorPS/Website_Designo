@@ -10,4 +10,10 @@ export const Containercards = styled.div`
         gap: 31px;
         width: 100%;
     }
+
+    @media (min-width: ${sizes.desktop}) {
+        width: 1111px;
+        height: 326px;
+        flex-direction: ${props => (props.position === 'Inverted' ? 'row-reverse' : 'row')};
+    }
 `

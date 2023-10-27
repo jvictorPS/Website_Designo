@@ -14,6 +14,7 @@ export default function Locations() {
                 city={'Toronto, Ontario M9C 3J5'}
                 phone={'+1 253-863-8967'}
                 email={'M : contact@designo.co'}
+                position={'Inverted'}
             />
 
             <LocationCard
@@ -36,6 +37,7 @@ export default function Locations() {
                 city={'Rhyd-y-fro SA8 9GA'}
                 phone={'P : 078 3115 1400'}
                 email={'M : contact@designo.uk'}
+                position={'Inverted'}
             />
         </ContainerCards>
     )
