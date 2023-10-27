@@ -14,14 +14,6 @@ export const ContainerHome = styled.section`
     }
 `
 
-export const ContainerCardsService = styled.section`
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 24px;
-    padding: 0 24px;
-`
-
 export const SummaryAboutSection = styled.section`
     background: #E7816B;
     width: 100%;
@@ -92,10 +84,10 @@ export const GridContainer = styled.div`
     height: 640px;
     width: 1111px;
     }
-`;
+`
 
-export const MescladoItem = styled.div`
+export const MergedRow = styled.div`
     @media (min-width: 1440px) {
     grid-row: span 2;
     }
-`;
+`

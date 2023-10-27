@@ -4,7 +4,6 @@ import { Marker, Popup, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css"
 import { MapContainerStyled } from "./style";
 import { Icon } from "leaflet";
-
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 
 export default function MapCard({
@@ -16,8 +15,8 @@ export default function MapCard({
     return (
         <MapContainerStyled 
             center={[latitude, longitude]} 
-            zoom={14}
-        >
+            zoom={14}>
+            
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -32,11 +31,10 @@ export default function MapCard({
                         popupAnchor:  [-3, -60]
                     })
                 }
-                
-                >
-                    <Popup>
-                        {office}
-                    </Popup>
+            >
+                <Popup>
+                    {office}
+                </Popup>
             </Marker>
         </MapContainerStyled>
     )

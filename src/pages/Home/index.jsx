@@ -11,11 +11,10 @@ import { Link } from "react-router-dom";
 import ScrollToTop from "../../utils/ScrollToTop";
 
 import { 
-    ContainerCardsService,
     SummaryAboutSection,
     ContainerHome,
     GridContainer,
-    MescladoItem,
+    MergedRow,
 } from "./style";
 
 export default function Home() {
@@ -38,13 +37,13 @@ export default function Home() {
             </SummaryAboutSection>
 
             <GridContainer>
-                <MescladoItem>
+                <MergedRow>
                     <ServiceCard 
                         to={'/webdesign'}
                         title={'Web design'}
                         image={webService}
                     />
-                </MescladoItem>
+                </MergedRow>
 
                     <ServiceCard
                         to={'/AppDesign'}
