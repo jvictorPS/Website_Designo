@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { sizes } from "../../styles/ScreenSizes/ScreenSizes";
 import phone from "../../assets/home/desktop/image-hero-phone.png"
 import circle from "../../assets/home/desktop/bg-pattern-hero-home.svg"
+import ovalHome from "../../assets/shared/desktop/bg-pattern-leaf.svg"
 
 export const ContainerHome = styled.section`
     display: flex;
@@ -11,6 +12,16 @@ export const ContainerHome = styled.section`
 
     @media (min-width: ${sizes.tablet}) {
         margin: 0 40px;
+    }
+
+    @media (min-width: ${sizes.desktop}) {
+        margin: 0;
+        background-image:
+            url(${ovalHome}),
+            url(${ovalHome});
+        background-size: auto, auto;
+        background-repeat: no-repeat;
+        background-position: left 340px, right 1640px;
     }
 `
 
@@ -22,7 +33,7 @@ export const SummaryAboutSection = styled.section`
     flex-direction: column;
     align-items: center;
     color: #FFF;
-    padding: 0 24px;
+    padding: 80px 24px;
     background-image: 
         url(${phone}),
         url(${circle});
@@ -30,13 +41,13 @@ export const SummaryAboutSection = styled.section`
 
     background-position: center 340px, left center;
     background-repeat: no-repeat;
+    gap: 24px;
 
     h4 {
         font-size: 32px;
         font-weight: 500;
         line-height: 36px;
         text-align: center;
-        margin-top: 80px;
     }
 
     p {
@@ -44,20 +55,18 @@ export const SummaryAboutSection = styled.section`
         font-size: 15px;
         font-weight: 300;
         line-height: 25px;
-        margin: 25px 0;
     }
 
     @media (min-width: ${sizes.tablet}) {
         width: 689px;
         border-radius: 15px;
-        padding: 0 58px;
-        background-size: cover, 640px;
-        background-position: center 250px, left center;
+        padding: 60px 58px;
+        background-size: auto, 640px;
+        background-position: center 290px, left center;
 
         h4 {
             font-size: 48px;
             line-height: 48px;
-            margin-top: 60px;
         }
 
         p {
@@ -65,6 +74,29 @@ export const SummaryAboutSection = styled.section`
             line-height: 26px;
         }
     }
+
+    @media (min-width: ${sizes.desktop}) {
+        width: 1111px;
+        height: 640px;
+        background-size: auto, 640px;
+        background-position: 555px -30px, right top;
+        align-items: flex-start;
+        padding: 145px 95px;
+        gap: 40px;
+
+        h4 {
+            width: 540px;
+            height: 165px;
+            text-align: start;
+        }
+    
+        p {
+            width: 445px;
+            height: 75px;
+            text-align: start;
+        }
+    }
+    
 `
 
 export const GridContainer = styled.div`
@@ -81,8 +113,8 @@ export const GridContainer = styled.div`
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
-    height: 640px;
     width: 1111px;
+    height: 640px;
     }
 `
 

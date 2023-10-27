@@ -12,6 +12,13 @@ export const ContainerAdvantagesSection = styled.section`
     @media (min-width: ${sizes.tablet}) {
         width: 689px;
     }
+
+    @media (min-width: ${sizes.desktop}) {
+        width: 1111px;
+        flex-direction: row;
+        gap: 30px;
+        padding: 0;
+    }
 `
 
 export const CardAdvantage = styled.div`
@@ -25,6 +32,11 @@ export const CardAdvantage = styled.div`
         flex-direction: row;
         gap: 48px;
         justify-content: space-between;
+    }
+
+    @media (min-width: ${sizes.desktop}) {
+        flex-direction: column;
+        align-items: center;
     }
 `
 
@@ -57,6 +69,20 @@ export const Text = styled.div`
 
         p {
             text-align: left;
+        }
+    }
+
+    @media (min-width: ${sizes.desktop}) {
+        gap: 32px;
+        align-items: center;
+
+        h4 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            width: 350px;
         }
     }
 `

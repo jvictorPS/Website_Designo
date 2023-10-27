@@ -14,8 +14,14 @@ export const ContainerHeader = styled.header`
     @media (min-width: ${sizes.tablet}) {
         height: 155px;
         padding: 0 42px;
-
+        /* width: 689px;
+        margin: 0 auto; */
     }
+/* 
+    @media (min-width: ${sizes.desktop}) {
+        width: 1111px;
+        margin: 0 auto;
+    } */
 `
 
 export const Logo = styled.img`
