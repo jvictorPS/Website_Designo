@@ -1,11 +1,9 @@
 /* eslint-disable react/prop-types */ // TODO: upgrade to latest eslint tooling
 
 import LogoDark  from "../../../assets/logo-light.png"
-import facebook from "../../../assets/icon-facebook.svg"
-import youtube from "../../../assets/icon-youtube.svg"
-import twitter from "../../../assets/icon-twitter.svg"
-import pinterest from "../../../assets/icon-pinterest.svg"
-import instagram from "../../../assets/icon-instagram.svg"
+import Button from "../../atoms/Button"
+import ScrollToTop from "../../../utils/ScrollToTop"
+import { Link } from "react-router-dom"
 
 import { 
     ContainerContactInformation, 
@@ -20,13 +18,15 @@ import {
     ContainerContactInvitation,
     ContainerLogoLinks,
     Location,
-    Container
+    Container,
+    FacebookIcon,
+    YoutubeIcon,
+    TwitterIcon,
+    PinterestIcon,
+    InstagramIcon
 } from "./style";
 
 
-import Button from "../../atoms/Button"
-import ScrollToTop from "../../../utils/ScrollToTop"
-import { Link } from "react-router-dom"
 
 export default function Footer({notContact}) {
 
@@ -54,6 +54,7 @@ export default function Footer({notContact}) {
 
         <Container>
             <Line />
+
             <ContainerLogoLinks>
                 <Logo src={LogoDark} alt="Logo do site"></Logo>
 
@@ -80,12 +81,13 @@ export default function Footer({notContact}) {
                 </ContainsLocation>
 
                 <ContainsSocialMedia>
-                    <img src={facebook} alt="icone facebook" />
-                    <img src={youtube} alt="icone youtube" />
-                    <img src={twitter} alt="icone twitter" />
-                    <img src={pinterest} alt="icone pinterest" />
-                    <img src={instagram} alt="icone instagram" />
+                    <FacebookIcon size={25} />
+                    <YoutubeIcon size={25} />
+                    <TwitterIcon size={25} />
+                    <PinterestIcon size={25} />
+                    <InstagramIcon size={25} />
                 </ContainsSocialMedia>
+
 
             </ContainerContactInformation>
         </Container>

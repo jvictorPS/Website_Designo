@@ -2,7 +2,57 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import BackgroundMobile from "../../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg"
 import { sizes } from "../../../styles/ScreenSizes/ScreenSizes";
+import { GrFacebook } from 'react-icons/gr'
+import { BsYoutube } from 'react-icons/bs'
+import { BsTwitter } from 'react-icons/bs'
+import { BsPinterest } from 'react-icons/bs'
+import { BsInstagram } from 'react-icons/bs'
 
+
+export const FacebookIcon = styled(GrFacebook)`
+    cursor: pointer;
+    color: #E7816B;
+
+    &:hover {
+        color: #FFAD9B;
+    }
+`
+
+export const YoutubeIcon = styled(BsYoutube)`
+    cursor: pointer;
+    color: #E7816B;
+
+    &:hover {
+        color: #FFAD9B;
+    }
+`
+
+export const TwitterIcon = styled(BsTwitter)`
+    cursor: pointer;
+    color: #E7816B;
+
+    &:hover {
+        color: #FFAD9B;
+    }
+`
+
+export const PinterestIcon = styled(BsPinterest)`
+    cursor: pointer;
+    color: #E7816B;
+
+    &:hover {
+        color: #FFAD9B;
+    }
+`
+
+export const InstagramIcon = styled(BsInstagram)`
+    cursor: pointer;
+    color: #E7816B;
+
+    &:hover {
+        color: #FFAD9B;
+    }
+`
 
 export const ContainerFooter = styled.footer`
     width: 100%;
