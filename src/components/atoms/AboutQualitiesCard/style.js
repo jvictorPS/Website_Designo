@@ -13,6 +13,12 @@ export const ContainerCard = styled.div`
         width: 689px;
         height: 736px;
     }
+
+    @media (min-width: ${sizes.desktop}) {
+        width: 1111px;
+        height: 640px;
+        flex-direction: row;
+    }
 `
 export const ContainerImage = styled.div`
     border: none;
@@ -27,6 +33,16 @@ export const ContainerImage = styled.div`
         border-top-right-radius: 15px;
         border-top-left-radius: 15px;
         background-image: url(${props => props.image.tablet});
+    }
+
+    @media (min-width: ${sizes.desktop}) {
+        width: 476px;
+        height: 640px;
+        flex-direction: row;
+        border-top-right-radius: 0;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        background-image: url(${props => props.image.desktop});
     }
 `
 
@@ -72,5 +88,17 @@ export const ContainerDescription = styled.div`
             font-size: 16px;
             line-height: 26px;
         }
+    }
+
+    @media (min-width: ${sizes.desktop}) {
+        width: 635px;
+        height: 640px;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: start;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+        padding: 154px 95px;
+
     }
 `

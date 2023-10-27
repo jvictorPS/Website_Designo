@@ -17,7 +17,12 @@ export const ContainerCard = styled.div`
 
     @media (min-width: ${sizes.tablet}) {
         width: 689px;
+    }
 
+    @media (min-width: ${sizes.desktop}) {
+        width: 1111px;
+        flex-direction: row-reverse;
+        height: 480px;
     }
 `
 
@@ -34,7 +39,16 @@ export const ContainerImage = styled.div`
         border-top-right-radius: 15px;
         border-top-left-radius: 15px;
         background-image: url(${imageTablet});
+    }
 
+    @media (min-width: ${sizes.desktop}) {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 0;
+        background-image: url(${imageDesktop});
+        height: 100%;
+        width: 476px;
+        background-size: auto;
     }
 `
 
@@ -83,5 +97,20 @@ export const ContainerDescription = styled.div`
             font-size: 16px;
             line-height: 26px;
         }
+    }
+
+    @media (min-width: ${sizes.desktop}) {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+        background-image: url(${BigOval});
+        background-position: center -150px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 135px 95px 135px 82px;
+        width: 635px;
+        height: 100%;
+        align-items: flex-start;
+        text-align: start;
     }
 `

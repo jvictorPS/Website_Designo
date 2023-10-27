@@ -25,7 +25,13 @@ export const ContainerForm = styled.div`
         padding: 71px 58px;
         background-image: url(${BigOval});
         background-position: -120px -35px;
+    }
 
+    @media (min-width: ${sizes.desktop}) {
+        flex-direction: row;
+        width: 1111px;
+        height: 480px;
+        gap: 95px;
     }
 `
 
@@ -67,6 +73,10 @@ export const ContainerTitle = styled.div`
             line-height: 48px;
         }
     }
+
+    @media (min-width: ${sizes.desktop}) {
+        width: 445px;
+    }
 `
 
 export const StyledForm = styled.form`
@@ -76,6 +86,10 @@ export const StyledForm = styled.form`
     align-items: center;
     justify-content: center;
     gap: 25px;
+
+    @media (min-width: ${sizes.desktop}) {
+        width: 380px;
+    }
 `
 
 export const ContainerInput = styled.div`

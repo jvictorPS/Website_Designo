@@ -1,10 +1,17 @@
 import styled from "styled-components";
+import { sizes } from "../../../styles/ScreenSizes/ScreenSizes";
 
 
 export const ContainerCountries = styled.section`
     display: flex;
     flex-direction: column;
     gap: 48px;
+
+    @media (min-width: ${sizes.desktop}) {
+        flex-direction: row;
+        width: 1111px;
+        justify-content: space-around;
+    }
 `
 
 export const Countrie = styled.div`
