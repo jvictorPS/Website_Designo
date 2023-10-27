@@ -55,10 +55,6 @@ export const StyledLink = styled(Link)`
         border-radius: 15px;
         opacity: 0.6;
         cursor: pointer;
-
-        &:hover {
-            background-color: #E7816B;
-        }
     }
 
     @media (min-width: ${sizes.tablet}) {
@@ -72,8 +68,14 @@ export const StyledLink = styled(Link)`
         }
     }
 
-    @media (min-width: ${sizes.tablet}) {
+    @media (min-width: ${sizes.desktop}) {
         width: 100%;
         height: 100%;
+
+        div {
+            &:hover {
+                background-color: #E7816B;
+            }
+        }
     }
 `
