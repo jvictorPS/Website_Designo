@@ -12,4 +12,9 @@ export const Organizer = styled.section`
         padding: 0 40px;
         gap: 120px;
     }
+
+    @media (min-width: ${sizes.tablet}) {
+        padding: 0 40px 400px 40px;
+        gap: 160px;
+    }
 `

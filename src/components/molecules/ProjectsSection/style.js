@@ -13,4 +13,12 @@ export const ContainerProjects = styled.section`
     @media (min-width: ${sizes.tablet}) {
         margin: 0;
     }
+
+    @media (min-width: ${sizes.desktop}) {
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 1111px;
+        gap: 30px;
+        justify-content: flex-start;
+    }
 `

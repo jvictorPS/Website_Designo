@@ -15,6 +15,12 @@ export const ContainerCard = styled.div`
         width: 689px;
         height: 310px;
     }
+
+    @media (min-width: ${sizes.desktop}) {
+        flex-direction: column;
+        width: 350px;
+        height: 478px;
+    }
 `
 export const ContainerImage = styled.img`
     border-top-left-radius: 15px;
@@ -27,6 +33,13 @@ export const ContainerImage = styled.img`
     @media (min-width: ${sizes.tablet}) {
         border-bottom-left-radius: 15px;
         border-top-right-radius: 0;
+        height: 100%;
+    }
+
+    @media (min-width: ${sizes.desktop}) {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
         height: 100%;
     }
 `
@@ -63,6 +76,13 @@ export const ContainerDescription = styled.div`
     @media (min-width: ${sizes.tablet}) {
         border-top-right-radius: 15px;
         border-bottom-left-radius: 0;
+        height: 100%;
+    }
+
+    @media (min-width: ${sizes.desktop}) {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
         height: 100%;
     }
 `

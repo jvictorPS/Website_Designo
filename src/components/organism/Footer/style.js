@@ -14,13 +14,16 @@ export const ContainerFooter = styled.footer`
     justify-content: flex-end;
     padding: 64px 24px;
     position: relative;
-    margin-top: 310px;
 
     @media (min-width: ${sizes.tablet}) {
         padding: 80px 40px;
         height: 423px;
-        margin-top: 331px;
+    }
 
+    @media (min-width: ${sizes.desktop}) {
+        padding: 80px 40px;
+        height: 423px;
+        margin-top: 0;
     }
 `
 

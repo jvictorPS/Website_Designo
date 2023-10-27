@@ -22,6 +22,7 @@ export const ContainerHome = styled.section`
         background-size: auto, auto;
         background-repeat: no-repeat;
         background-position: left 340px, right 1640px;
+        padding-bottom: 400px;
     }
 `
 
