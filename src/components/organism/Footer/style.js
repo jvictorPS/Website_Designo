@@ -16,13 +16,13 @@ export const ContainerFooter = styled.footer`
     position: relative;
 
     @media (min-width: ${sizes.tablet}) {
-        padding: 80px 40px;
+        padding: 60px 20px;
         height: 423px;
     }
 
     @media (min-width: ${sizes.desktop}) {
         padding: 80px 40px;
-        height: 423px;
+        height: 393px;
         margin-top: 0;
     }
 `
@@ -38,6 +38,9 @@ export const ContainerContactInvitation = styled.section`
     border-radius: 15px;
     position: absolute;
     top: -190px;
+    left: 50%;
+    transform: translateX(-50%);
+
     background-image: url(${BackgroundMobile});
     background-size: 270%;
     background-position: 80% -5%;
@@ -130,6 +133,10 @@ export const ContainsLocation = styled.div`
     @media (min-width: ${sizes.tablet}) {
         flex-direction: row;
     }
+
+    @media (min-width: ${sizes.desktop}) {
+        gap: 150px;
+    }
 `
 
 export const Location = styled.div`
@@ -152,7 +159,7 @@ export const Title = styled.h4`
 
 export const ContainsSocialMedia = styled.div`
     display: flex;
-    gap: 20px;
+    gap: 15px;
 `
 
 export const ContainerLogoLinks = styled.div`
@@ -173,12 +180,29 @@ export const ContainerLogoLinks = styled.div`
 `
 
 export const Line = styled.hr`
-        width: 92%;
-        opacity: 0.1;
-        position: absolute;
-        top: 312px;
-    
-        @media (min-width: ${sizes.tablet}) {
-            top: 233px;
-        }
-    `
+    width: 100%;
+    opacity: 0.1;
+    position: absolute;
+    top: 60px;
+
+    @media (min-width: ${sizes.tablet}) {
+        top: 60px;
+    }
+
+    @media (min-width: ${sizes.desktop}) {
+        top: 60px;
+        left: 10
+    }
+`
+export const Container = styled.div`
+    position: relative;
+    width: 90%;
+
+    @media (min-width: ${sizes.tablet}) {
+        width: 690px;
+    }
+
+    @media (min-width: ${sizes.desktop}) {
+        width: 1111px
+    }
+`

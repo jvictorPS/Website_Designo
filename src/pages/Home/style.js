@@ -9,9 +9,12 @@ export const ContainerHome = styled.section`
     flex-direction: column;
     align-items: center;
     gap: 120px;
+    padding-bottom: 311px;
+
 
     @media (min-width: ${sizes.tablet}) {
         margin: 0 40px;
+        padding-bottom: 400px;
     }
 
     @media (min-width: ${sizes.desktop}) {

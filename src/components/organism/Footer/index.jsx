@@ -17,7 +17,8 @@ import {
     Line,
     ContainerContactInvitation,
     ContainerLogoLinks,
-    Location
+    Location,
+    Container
 } from "./style";
 
 
@@ -30,7 +31,6 @@ export default function Footer() {
     return (
 
         <ContainerFooter>
-            <Line />
 
             <ContainerContactInvitation>
                 <h4>Let’s talk about your project</h4>
@@ -44,6 +44,8 @@ export default function Footer() {
                 </Link>
             </ContainerContactInvitation>
 
+        <Container>
+            <Line />
             <ContainerLogoLinks>
                 <Logo src={LogoDark} alt="Logo do site"></Logo>
 
@@ -78,6 +80,7 @@ export default function Footer() {
                 </ContainsSocialMedia>
 
             </ContainerContactInformation>
+        </Container>
         </ContainerFooter>
     )
 }
