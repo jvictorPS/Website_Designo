@@ -6,7 +6,7 @@ import { sizes } from "../../../styles/ScreenSizes/ScreenSizes";
 
 export const ContainerFooter = styled.footer`
     width: 100%;
-    height: 815px;
+    height: ${props => (props.notContact ? '626px;' : '815px')};
     background: #1D1C1E;
     display: flex;
     flex-direction: column;
@@ -17,12 +17,12 @@ export const ContainerFooter = styled.footer`
 
     @media (min-width: ${sizes.tablet}) {
         padding: 60px 20px;
-        height: 423px;
+        height: ${props => (props.notContact ? '337px' : '423px')};
     }
 
     @media (min-width: ${sizes.desktop}) {
         padding: 80px 40px;
-        height: 393px;
+        height: ${props => (props.notContact ? '321px' : '393px')};
         margin-top: 0;
     }
 `

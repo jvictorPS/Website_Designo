@@ -2,18 +2,18 @@ import Header from '../../components/organism/Header'
 import Footer from '../../components/organism/Footer'
 import CountrieSection from '../../components/molecules/CountriesSection'
 import ContactForm from '../../components/molecules/ContactForm'
-import PageOrganizer from '../../components/atoms/PageOrganizer'
+import { Organizer } from './style'
 
 
 export default function Contact() {
     return (
         <>
             <Header />
-                <PageOrganizer>
+                <Organizer>
                     <ContactForm />
                     <CountrieSection />
-                </PageOrganizer>
-            <Footer />
+                </Organizer>
+            <Footer notContact={true}/>
         </>
     )
 }

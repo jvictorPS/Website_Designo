@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */ // TODO: upgrade to latest eslint tooling
+
 import LogoDark  from "../../../assets/logo-light.png"
 import facebook from "../../../assets/icon-facebook.svg"
 import youtube from "../../../assets/icon-youtube.svg"
@@ -26,23 +28,29 @@ import Button from "../../atoms/Button"
 import ScrollToTop from "../../../utils/ScrollToTop"
 import { Link } from "react-router-dom"
 
-export default function Footer() {
+export default function Footer({notContact}) {
 
     return (
 
-        <ContainerFooter>
+        <ContainerFooter
+            notContact={notContact}
+        >
 
-            <ContainerContactInvitation>
-                <h4>Let’s talk about your project</h4>
-                <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
-                <Link onClick={ScrollToTop} to='/Contact'>
-                    <Button
-                        text={'Get in touch'}
-                        theme={'dark'}
-                    />
-                
-                </Link>
-            </ContainerContactInvitation>
+            {!notContact ? 
+                <ContainerContactInvitation>
+                    <h4>Let’s talk about your project</h4>
+                    <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
+                    <Link onClick={ScrollToTop} to='/Contact'>
+                        <Button
+                            text={'Get in touch'}
+                            theme={'dark'}
+                        />
+                    
+                    </Link>
+                </ContainerContactInvitation>
+            :
+                null
+            }
 
         <Container>
             <Line />
