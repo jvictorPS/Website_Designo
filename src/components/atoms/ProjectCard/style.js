@@ -20,6 +20,15 @@ export const ContainerCard = styled.div`
         flex-direction: column;
         width: 350px;
         height: 478px;
+
+        &:hover {
+            cursor: pointer;
+
+            h4, p, div {
+                background-color: #E7816B;
+                color: #FFF;
+            }
+        }
     }
 `
 export const ContainerImage = styled.img`
