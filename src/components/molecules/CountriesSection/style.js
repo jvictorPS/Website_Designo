@@ -5,7 +5,6 @@ export const ContainerCountries = styled.section`
     display: flex;
     flex-direction: column;
     gap: 48px;
-    margin: 120px 0;
 `
 
 export const Countrie = styled.div`

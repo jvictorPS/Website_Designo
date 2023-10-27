@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import oval from '../../../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg'
+import BigOval from '../../../assets/contact/desktop/bg-pattern-hero-desktop.svg'
+
+import { sizes } from "../../../styles/ScreenSizes/ScreenSizes";
 
 
 export const ContainerForm = styled.div`
@@ -15,6 +18,15 @@ export const ContainerForm = styled.div`
     background-image: url(${oval});
     background-position: 15% top ;
     background-repeat: no-repeat;
+
+    @media (min-width: ${sizes.tablet}) {
+        width: 689px;
+        border-radius: 15px;
+        padding: 71px 58px;
+        background-image: url(${BigOval});
+        background-position: -120px -35px;
+
+    }
 `
 
 export const ContainerTitle = styled.div`
@@ -39,6 +51,21 @@ export const ContainerTitle = styled.div`
         font-size: 32px;
         font-weight: 500;
         line-height: 36px;
+    }
+
+    @media (min-width: ${sizes.tablet}) {
+        align-items: flex-start;
+
+        p {
+            font-size: 16px;
+            line-height: 26px;
+            text-align: start;
+        }
+
+        h4 {
+            font-size: 48px;
+            line-height: 48px;
+        }
     }
 `
 
@@ -75,7 +102,7 @@ export const ErrorMessage = styled.span`
 export const StyledInput = styled.input`
     width: 100%;
     height: 40px;
-    background: #E7816B;
+    background: transparent;
     border: none;
     border-bottom: 1px solid #fff;
     color: #FFF;
@@ -105,7 +132,7 @@ export const StyledInput = styled.input`
 export const StyledTextArea = styled.textarea`
     width: 100%;
     height: 75px;
-    background: #E7816B;
+    background: transparent;
     border: none;
     border-bottom: 1px solid #fff;
     color: #FFF;

@@ -14,6 +14,8 @@ import {
     ContainerCardsService,
     SummaryAboutSection,
     ContainerHome,
+    GridContainer,
+    MescladoItem,
 } from "./style";
 
 export default function Home() {
@@ -35,12 +37,14 @@ export default function Home() {
                 </Link>
             </SummaryAboutSection>
 
-            <ContainerCardsService>
+            <GridContainer>
+                <MescladoItem>
                     <ServiceCard 
                         to={'/webdesign'}
                         title={'Web design'}
                         image={webService}
                     />
+                </MescladoItem>
 
                     <ServiceCard
                         to={'/AppDesign'}
@@ -53,7 +57,7 @@ export default function Home() {
                         title={'Graphic Design'}
                         image={graphicService}
                     />
-            </ContainerCardsService>
+            </GridContainer>
 
             <AdvantagesSection />
         </ContainerHome>

@@ -14,5 +14,5 @@ export const Circle = styled.div`
 `
 
 export const Image = styled.img`
-    width: 188px;
-`
+    width: 202px;
+    height: 202px;`

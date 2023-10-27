@@ -1,9 +1,5 @@
 import styled from "styled-components";
-
-import imageMobile from "../../../assets/about/mobile/image-about-hero.jpg"
-import imageTablet from "../../../assets/about/tablet/image-about-hero.jpg"
-import imageDesktop from "../../../assets/about/desktop/image-about-hero.jpg"
-import oval from "../../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg"
+import { sizes } from "../../../styles/ScreenSizes/ScreenSizes";
 
 
 export const ContainerCard = styled.div`
@@ -12,6 +8,11 @@ export const ContainerCard = styled.div`
     display: flex;
     flex-direction: column;
     background-color: transparent;
+
+    @media (min-width: ${sizes.tablet}) {
+        width: 689px;
+        height: 736px;
+    }
 `
 export const ContainerImage = styled.div`
     border: none;
@@ -21,6 +22,12 @@ export const ContainerImage = styled.div`
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (min-width: ${sizes.tablet}) {
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        background-image: url(${props => props.image.tablet});
+    }
 `
 
 export const ContainerDescription = styled.div`
@@ -48,5 +55,22 @@ export const ContainerDescription = styled.div`
         font-size: 15px;
         font-weight: 400;
         line-height: 25px;
+    }
+
+    @media (min-width: ${sizes.tablet}) {
+        height: 416px;
+        padding: 68px 58px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+
+        h4 {
+            font-size: 40px;
+            line-height: 48px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 26px;
+        }
     }
 `

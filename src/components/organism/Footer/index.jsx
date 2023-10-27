@@ -15,7 +15,9 @@ import {
     Title,
     ContainsSocialMedia,
     Line,
-    ContainerContactInvitation
+    ContainerContactInvitation,
+    ContainerLogoLinks,
+    Location
 } from "./style";
 
 
@@ -28,6 +30,7 @@ export default function Footer() {
     return (
 
         <ContainerFooter>
+            <Line />
 
             <ContainerContactInvitation>
                 <h4>Let’s talk about your project</h4>
@@ -41,27 +44,29 @@ export default function Footer() {
                 </Link>
             </ContainerContactInvitation>
 
-            <Logo src={LogoDark} alt="Logo do site"></Logo>
+            <ContainerLogoLinks>
+                <Logo src={LogoDark} alt="Logo do site"></Logo>
 
-            <Line />
-
-            <ContainerContactInformation>
                 <ContainerLinks>
                     <StyledLink onClick={ScrollToTop} to='/About'>OUR COMPANY</StyledLink>
                     <StyledLink onClick={ScrollToTop} to='/Locations'>LOCATIONS</StyledLink>
                     <StyledLink onClick={ScrollToTop} to='/Contact'>CONTACT</StyledLink>
                 </ContainerLinks>
+            </ContainerLogoLinks>
 
+            <ContainerContactInformation>
                 <ContainsLocation>
-                    <Title>Designo Central Office</Title>
-                    <p>3886 Wellington Street</p>
-                    <p>Toronto, Ontario M9C 3J5</p>
-                </ContainsLocation>
+                    <Location>
+                        <Title>Designo Central Office</Title>
+                        <p>3886 Wellington Street</p>
+                        <p>Toronto, Ontario M9C 3J5</p>
+                    </Location>
 
-                <ContainsLocation>
-                    <Title>Contact Us (Central Office)</Title>
-                    <p>P : +1 253-863-8967</p>
-                    <p>M : contact@designo.co</p>
+                    <Location>
+                        <Title>Contact Us (Central Office)</Title>
+                        <p>P : +1 253-863-8967</p>
+                        <p>M : contact@designo.co</p>
+                    </Location>
                 </ContainsLocation>
 
                 <ContainsSocialMedia>

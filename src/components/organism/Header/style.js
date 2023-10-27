@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { sizes } from "../../../styles/ScreenSizes/ScreenSizes";
 
 export const ContainerHeader = styled.header`
     display: flex;
@@ -9,6 +10,12 @@ export const ContainerHeader = styled.header`
     width: 100%;
     padding: 0 24px;
     background-color: #fff;
+
+    @media (min-width: ${sizes.tablet}) {
+        height: 155px;
+        padding: 0 42px;
+
+    }
 `
 
 export const Logo = styled.img`
@@ -21,10 +28,10 @@ export const StyledLink = styled(Link)`
     font-weight: 400;
     color: #333136;
     text-decoration: none;
-
+/* 
     &:hover {
         border-bottom: 1px solid #6D6D6E;
-    }
+    } */
 `
 
 export const ContainerLinks = styled.nav`

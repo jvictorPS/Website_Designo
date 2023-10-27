@@ -1,9 +1,11 @@
 import styled from "styled-components";
 import {Link} from 'react-router-dom'
+import { sizes } from "../../../styles/ScreenSizes/ScreenSizes";
+
 
 export const StyledLink = styled(Link)`
     text-decoration: none;
-    width: 100%;
+    width: 327px;
     height: 250px;
     border-radius: 15px;
     background: #000;
@@ -57,5 +59,21 @@ export const StyledLink = styled(Link)`
         &:hover {
             background-color: #E7816B;
         }
+    }
+
+    @media (min-width: ${sizes.tablet}) {
+        width: 689px;
+        height: 200px;
+
+        h4 {
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: 2px;
+        }
+    }
+
+    @media (min-width: ${sizes.tablet}) {
+        width: 100%;
+        height: 100%;
     }
 `

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import oval from '../../../assets/shared/desktop/bg-pattern-two-circles.svg'
+import { sizes } from "../../../styles/ScreenSizes/ScreenSizes";
 
 export const Containercard = styled.div`
     width: 100%;
@@ -30,5 +31,34 @@ export const Containercard = styled.div`
 
     p {
         font-weight: 400;
+    }
+
+    @media (min-width: ${sizes.tablet}) {
+        border-radius: 15px;
+        align-items: flex-start;
+        padding: 88px 100px 88px 75px;
+        height: 326px;
+
+        h3 {
+            font-size: 40px;
+            line-height: 48px;
+        }
+
+        div {
+            font-size: 16px;
+        }
+    }
+`
+
+export const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @media (min-width: ${sizes.tablet}) {
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+        text-align: start;
     }
 `

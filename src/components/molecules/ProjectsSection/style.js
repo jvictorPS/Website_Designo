@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { sizes } from "../../../styles/ScreenSizes/ScreenSizes";
 
 
 export const ContainerProjects = styled.section`
@@ -8,4 +9,8 @@ export const ContainerProjects = styled.section`
     justify-content: center;
     gap: 40px;
     margin: 0 24px;
+
+    @media (min-width: ${sizes.tablet}) {
+        margin: 0;
+    }
 `

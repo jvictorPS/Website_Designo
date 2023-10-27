@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import BackgroundMobile from "../../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg"
+import { sizes } from "../../../styles/ScreenSizes/ScreenSizes";
 
 
 export const ContainerFooter = styled.footer`
@@ -14,6 +15,13 @@ export const ContainerFooter = styled.footer`
     padding: 64px 24px;
     position: relative;
     margin-top: 310px;
+
+    @media (min-width: ${sizes.tablet}) {
+        padding: 80px 40px;
+        height: 423px;
+        margin-top: 331px;
+
+    }
 `
 
 export const ContainerContactInvitation = styled.section`
@@ -49,6 +57,27 @@ export const ContainerContactInvitation = styled.section`
         font-weight: 400;
         line-height: 25px;
     }
+
+    @media (min-width: ${sizes.tablet}) {
+        width: 92%;
+        height: 350px;
+        top: -265px;
+        padding: 0 58px;
+
+
+        h4 {
+            font-size: 40px;
+            line-height: 40px;
+            width: 335px;
+            height: 98px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 26px;
+            width: 573px;
+        }
+    }
 `
 
 export const Logo = styled.img`
@@ -61,6 +90,14 @@ export const ContainerContactInformation = styled.section`
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    width: 100%;
+    
+    @media (min-width: ${sizes.tablet}) {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 50px;
+    }
 `
 
 export const StyledLink = styled(Link)`
@@ -75,9 +112,24 @@ export const ContainerLinks = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 32px;
+
+    @media (min-width: ${sizes.tablet}) {
+        flex-direction: row;
+        gap: 42px;
+    }
 `
 
 export const ContainsLocation = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @media (min-width: ${sizes.tablet}) {
+        flex-direction: row;
+    }
+`
+
+export const Location = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,6 +137,10 @@ export const ContainsLocation = styled.div`
     font-size: 16px;
     opacity: 0.5;
     font-weight: 200;
+
+    @media (min-width: ${sizes.tablet}) {
+        align-items: flex-start;
+    }
 `
 
 export const Title = styled.h4`
@@ -96,8 +152,30 @@ export const ContainsSocialMedia = styled.div`
     gap: 20px;
 `
 
-export const Line = styled.hr`
+export const ContainerLogoLinks = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    margin: 32px 0;
-    opacity: 0.1
+    gap: 65px;
+    margin-bottom: 40px;
+    
+    
+    @media (min-width: ${sizes.tablet}) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 72px;
+    }
 `
+
+export const Line = styled.hr`
+        width: 92%;
+        opacity: 0.1;
+        position: absolute;
+        top: 312px;
+    
+        @media (min-width: ${sizes.tablet}) {
+            top: 233px;
+        }
+    `
