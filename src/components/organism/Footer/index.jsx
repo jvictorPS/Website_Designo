@@ -38,8 +38,11 @@ export default function Footer({notContact}) {
 
             {!notContact ? 
                 <ContainerContactInvitation>
-                    <h4>Let’s talk about your project</h4>
-                    <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
+                    <div>
+                        <h4>Let’s talk about your project</h4>
+                        <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
+                    </div>
+                    
                     <Link onClick={ScrollToTop} to='/Contact'>
                         <Button
                             text={'Get in touch'}

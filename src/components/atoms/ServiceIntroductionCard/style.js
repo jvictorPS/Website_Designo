@@ -35,6 +35,8 @@ export const ContainerCard = styled.div`
         border-radius: 15px;
         background-position: center center;
         padding: 0 100px;
+        width: 688px;
+        height: 252px;
 
         p {
             line-height: 26px;
@@ -44,6 +46,17 @@ export const ContainerCard = styled.div`
         h4 {
             font-size: 48px;
             line-height: 48px;
+        }
+    }
+
+    @media (min-width: ${sizes.desktop}) {
+        border-radius: 15px;
+        background-position: right center;
+        padding: 0 100px;
+        width: 1111px;
+
+        p {
+            width: 400px
         }
     }
 `

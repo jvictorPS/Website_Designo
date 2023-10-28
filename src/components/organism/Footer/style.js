@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import BackgroundMobile from "../../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg"
+import BackgroundLarge from "../../../assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg"
 import { sizes } from "../../../styles/ScreenSizes/ScreenSizes";
 import { GrFacebook } from 'react-icons/gr'
 import { BsYoutube } from 'react-icons/bs'
@@ -96,42 +97,80 @@ export const ContainerContactInvitation = styled.section`
     background-position: 80% -5%;
     background-repeat: no-repeat;
     color: #FFF;
-    padding: 0 24px;
+    padding: 64px 24px;
+    gap: 32px;
 
-    h4 {
-        font-size: 32px;
-        font-weight: 500;
-        text-align: center;
-        line-height: 36px;
-    }
 
-    p {
-        text-align: center;
-        margin-top: 15px;
-        margin-bottom: 32px;
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 25px;
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+
+        h4 {
+            width: 279px;
+            font-size: 32px;
+            font-weight: 500;
+            text-align: center;
+            line-height: 36px;
+        }
+    
+        p {
+            text-align: center;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 25px;
+        }
     }
 
     @media (min-width: ${sizes.tablet}) {
-        width: 92%;
+        width: 690px;
         height: 350px;
         top: -265px;
-        padding: 0 58px;
+        padding: 57px 120px;
+        background-image: url(${BackgroundLarge});
+        background-size: auto;
+        background-position: center center;
 
+        div {
 
-        h4 {
-            font-size: 40px;
-            line-height: 40px;
-            width: 335px;
-            height: 98px;
+            h4 {
+                font-size: 40px;
+                line-height: 40px;
+                width: 335px;
+                height: 98px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 26px;
+            }
         }
+    }
 
-        p {
-            font-size: 16px;
-            line-height: 26px;
-            width: 573px;
+    @media (min-width: ${sizes.desktop}) {
+        width: 1111px;
+        height: 292px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 72px 95px;
+        background-position: right center;
+        top: -230px;
+
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            h4 {
+                text-align: start;
+            }
+
+            p {
+                text-align: start;
+                width: 459px;
+            }
         }
     }
 `

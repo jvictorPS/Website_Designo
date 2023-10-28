@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { sizes } from "../../../styles/ScreenSizes/ScreenSizes";
+import BackIcon from "../../../assets/shared/desktop/bg-pattern-leaf.svg"
 
 
 export const Organizer = styled.section`
@@ -18,5 +19,8 @@ export const Organizer = styled.section`
     @media (min-width: ${sizes.desktop}) {
         padding: 0 40px 400px 40px;
         gap: 160px;
+        background-image: url(${BackIcon});
+        background-repeat: no-repeat;
+        background-position: left 200px;
     }
 `
