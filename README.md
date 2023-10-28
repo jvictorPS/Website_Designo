@@ -1,4 +1,4 @@
-<img src="https://github.com/jvictorPS/Website_Designo/assets/100648619/9a25c632-19bc-4658-8b8d-7320c23bbfdb" alt="tema dark" width="400">
+<h1>Designo</h1>
 
 <h2>:black_nib: Descrição</h2>
 <p>Website de múltiplas páginas com o tema de uma agência de design, feito em React e Styled-Components.</p>
